@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                  
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>Gale Force Esports</title>
+
+ <link rel="stylesheet"  type="text/css"  href="galeforce.css">
+ <link rel="stylesheet" href="galeforce.js">
+
+ <!---box icon links-->
+
+ <link rel="stylesheet"
+ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<!---remix icon links-->
+
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!---Google Fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        @keyframes appear{
+            from{
+                opacity: 0;
+                scale: 0.5;
+            }
+
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+
+            
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .card
+        {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    
+    
+    </style>
+
+
+<script>
+    function toggleCard(card) {
+    const isExpanded = card.classList.contains('expanded');
+    
+    if (isExpanded) {
+        card.classList.remove('expanded');
+        card.classList.add('minimized');
+    } else {
+        // Collapse all cards
+        document.querySelectorAll('.card').forEach(c => {
+            c.classList.remove('expanded');
+            c.classList.add('minimized');
+        });
+        // Expand the clicked card
+        card.classList.remove('minimized');
+        card.classList.add('expanded');
+    }
+}
+    
+</script>
+
+
+
+    </head>
+    <body>
+
+
+        <div id="preloader"></div>
+
+        <!---header-->
+
+        <section class="headop">
+            <a href="#" class="logo">
+                <img src="gfe.png" alt="">
+            </a>
+
+
+                 <ul class="navlist">
+
+                    <li><a href="#fourth-page">About</a></li>
+                    <li><a href="#second-page">Tournaments</a></li>
+                    <li><a href="#third-page">Scrims</a></li>
+                    <li><a href="#">Contact</a></li>
+
+
+                 </ul>
+
+
+               <div class="right-content">
+
+                <a href="#" class="nav-btn">Sign In</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+
+               </div>
+
+            </section>
+
+
+            <div class="cursor-dot" data-cursor-dot></div>
+            <div class="cursor-outline" data-cursor-outline></div>
+
+
+        <!---hero-->
+
+        <section class="hero">
+            <div class="hero-text">
+                <h5>#God Mode</h5> 
+                <h1>Gale Force Esports</h1>
+                <p>Lorem, ores mollitia ipsum cupiditate quos itaque animi porro, sunt atque ducimus quasi minus accusantium.</p>
+                
+                <div class="main-hero">
+                    <a href="#" class="button"><button style="--clr:#39FF14"><span>Know More</span><i></i></button></a>
+
+                </div>
+                    
+            </div>
+                    
+            <div class="hero-img">
+                <img src="gfe.png" alt="">
+
+            </div>
+
+        </section>
+
+
+
+         <!---hero1-->
+
+         
+
+         <section class="hero1" id="second-page">
+            <section class="tour-text"> <h1>Tournaments</h1></section>
+        
+         
+
+            <div class="box-container">
+                <div class="box1">
+                    
+                  </div>
+
+                  <div class="box2">
+                    
+                  </div>
+
+
+                  <div class="box3">
+                    
+                  </div>
+
+
+                </div>
+
+               
+                    
+          
+                    
+        
+
+        </section>
+
+
+
+<!---hero2-->
+
+         
+
+<section class="hero1" id="third-page">
+    <section class="tour-text"> <h1>Scrims</h1></section>
+
+ 
+
+    <div class="box-container">
+        <div class="box4">
+            
+          </div>
+
+          <div class="box5">
+            
+          </div>
+
+
+          <div class="box6">
+            
+          </div>
+
+
+        </div>
+
+       
+            
+  
+            
+
+
+</section>
+
+
+
+
+<!---hero3-->
+
+         
+
+<section class="hero1" id="fourth-page">
+   
+ 
+
+   <div class="card-container">
+
+  
+
+
+    <div class="card minimized" onclick="toggleCard(this)">
+        <img src="IMG20240122093736.jpg" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Founder</div>
+            <div class="card-description">I am Vighnesh, founder of Gale Force Esports. We organize premier esports tournaments and build a vibrant gaming community. </div>
+        </div>
+    </div>
+    <div class="card minimized" onclick="toggleCard(this)">
+        <img src="https://meetjadhav.web.app/image/profile1.png" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Co-Founder</div>
+            <div class="card-description">Meet Jadhav, co-founder of Gale Force Esports. We organize premier esports tournaments and build a vibrant gaming community.</div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+   
+        
+
+        
+
+
+</section>
+
+
+
+
+
+         <!---js links-->
+         <script src="galeforce.js"></script>
+
+
+
+         <script>
+            // JavaScript to reset scroll position to the top on page load
+            window.onload = function() {
+                window.scrollTo(0, 0);
+            };
+        </script>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none"
+            })
+         </script>
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+</html>

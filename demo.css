@@ -1,0 +1,31 @@
+body {  
+    font-family: Arial, sans-serif;  
+    transition: background-color 0.3s, color 0.3s;  
+    padding: 20px;  
+    margin: 0;  
+    text-align: center;  
+}  
+
+h1 {  
+    margin-bottom: 20px;  
+}  
+
+.light {  
+    background-color: #f0f0f0;  
+    color: #333;  
+}  
+
+.dark {  
+    background-color: #333;  
+    color: #f0f0f0;  
+}  
+
+.ocean {  
+    background-color: #0077be;  
+    color: #ffffff;  
+}  
+
+.forest {  
+    background-color: #228B22;  
+    color: #ffffff;  
+}
