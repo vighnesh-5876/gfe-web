@@ -2,6 +2,7 @@
 html{
 
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 
@@ -477,10 +478,7 @@ button:hover i::after {
 
 
 
-body{
-  cursor: none;
 
-}
 
 .cursor-dot{
 
@@ -508,15 +506,7 @@ body{
   pointer-events: none;
 }
 
-#preloader{
-  background: #ff0000 url(aac3638ab48538e7546e22cc25efd566.gif) no-repeat center ;
-  background-size: 100%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
 
-}
 
 
 .card-container{
